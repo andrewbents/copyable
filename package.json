@@ -1,0 +1,32 @@
+{
+  "name": "copyable",
+  "version": "1.0.0",
+  "description": "Immutable data objects for TypeScript (and JavaScript)",
+  "main": "dist/copyable.js",
+  "typings": "dist/copyable.d.ts",
+  "license": "MIT",
+  "author": "Andrew Bents <andreybenz@gmail.com>",
+  "homepage": "https://github.com/andrewbents/copyable",
+  "repository": {
+    "url": "https://github.com/andrewbents/copyable.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "del-cli dist/ && tsc && del-cli \"dist/*.d.ts\" \"!dist/copyable.d.ts\"",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "typescript": "^2.8.0 || ^3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.0",
+    "@types/jest-diff": "20.0.1",
+    "del-cli": "1.1.0",
+    "jest": "24.1.0",
+    "ts-jest": "23.10.5",
+    "typescript": "3.3.3"
+  },
+  "files": [
+    "dist"
+  ]
+}

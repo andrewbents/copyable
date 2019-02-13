@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copyable toString should correctly print subclasses 1`] = `
+"Derived(
+  bool=true,
+  str=\\"hello world\\",
+  derivedVal=5
+)"
+`;
+
+exports[`Copyable toString should print copyable object 1`] = `
+"Outer(
+  num=10,
+  innerObj=Inner(
+    bool=true,
+    str=\\"hello world\\"
+  ),
+  falsy=undefined,
+  falsyNull=null,
+  plainObj=Object { a: 5, b: 6 }
+)"
+`;
